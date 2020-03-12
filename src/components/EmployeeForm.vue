@@ -23,7 +23,8 @@
     },
     methods: {
         handleSubmit() {
-            this.$emit('add:employee', this.employee)
+            this.$store.dispatch('addEmployee', this.employee)
+            //this.$emit('add:employee', this.employee)
         }
     }
   }
